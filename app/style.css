@@ -123,8 +123,7 @@ button {
     flex-direction: column;
     align-items: center;
     padding: 32px;
-    background: #fff;
-    border-radius: 30px;
+    
 }
 
 .time-block h3 {
