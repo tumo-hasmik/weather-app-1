@@ -147,6 +147,7 @@ button {
     padding: 32px;
     display: flex;
     flex: 1;
+    justify-content: space-around;
     }
     
     .main-block h2 {
@@ -226,3 +227,90 @@ button {
     font-size: 20px;
     font-weight: 600;
     }
+
+    .main .container:last-child{
+        margin-top: 30px;
+    }
+
+    .forecast-block{
+        padding: 32px;
+    }
+
+    .forecast-block h3{
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .row{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .row img{
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+    }
+
+    .row .amount{
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .row .text{
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+    .hourly-block{
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+    }
+
+    .hourly-block h3{
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .hourly-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        max-width: 140px;
+        background: linear-gradient(170.72deg, #FFAF57 -12.41%, rgba(246, 250, 217, 0) 163.32%);
+        padding: 18px;
+        border-radius: 30px;
+        justify-content: space-between;
+        font-weight: 700;
+    }
+    .hourly-icon{
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+    .arrow{
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+
+.hourly-info-wrapper{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.night{
+    background: linear-gradient(173.7deg, #928DAC -15.92%, rgba(96, 119, 174, 0) 109.1%);
+
+}
