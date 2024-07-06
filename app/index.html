@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="main dark">
         <div class="header">
             <div class="theme-toggle">
                 <div class="toggle-wrapper">
@@ -40,19 +40,19 @@
             <div class="time-block block">
                 <h3 id="city"></h3>
                 <h1 id="time">09:03</h1>
-                <p>Thursday, 31 Aug</p>
+                <p id="currentDate">Thursday, 31 Aug</p>
             </div>
             <div class="main-block block">
                 <div>
-                    <h2>24°C</h2>
-                    <p class="feels-like">Feels like <span>22°C</span></p>
+                    <h2 id="mainTemp"></h2>
+                    <p class="feels-like">Feels like <span id="feelsLike"></span></p>
                     <div class="time-info">
                         <div class="sun-icon">
                             <img src="./images/Sunrise.png" alt="">
                         </div>
                         <div>
                             <p class="title">Sunrise</p>
-                            <p class="time">06:37 AM</p>
+                            <p class="sunriseTime">06:37 AM</p>
                         </div>
                     </div>
                     <div class="time-info">
@@ -61,13 +61,13 @@
                         </div>
                         <div>
                             <p class="title">Sunset</p>
-                            <p class="time">06:37 AM</p>
+                            <p class="sunsetTime">06:37 AM</p>
                         </div>
                     </div>
                 </div>
                 <div class="main-image-block">
-                    <img class="main-image" src="./images/sun.png" alt="">
-                    <p class="main-image-text">Sunny</p>
+                    <img class="main-image" id="mainImage" src="./images/sun.png" alt="">
+                    <p class="main-image-text" id="conditionText">Sunny</p>
                 </div>
 
                 <div class="general-info">
@@ -113,25 +113,25 @@
                     <p class="text">Friday, 1 Sep</p>
                 </div>
 
-                <div class="row">
+                <div id="pressurer">
                     <img src="./images/mist 1.png" alt="">
                     <p class="amount">22°C</p>
                     <p class="text">Saturday, 2 Sep</p>
                 </div>
 
-                <div class="row">
+                <div id="humidity">
                     <img src="./images/sun.png" alt="">
                     <p class="amount">27°C</p>
                     <p class="text">Sunday, 3 Sep</p>
                 </div>
 
-                <div class="row">
+                <div id="wind">
                     <img src="./images/drizzle 1.png" alt="">
                     <p class="amount">18°C</p>
                     <p class="text">Monday, 4 Sep</p>
                 </div>
 
-                <div class="row">
+                <div id="uv">
                     <img src="./images/rain 2.png" alt="">
                     <p class="amount">16°C</p>
                     <p class="text">Tuesday, 5 Sep</p>
