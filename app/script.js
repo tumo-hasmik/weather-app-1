@@ -159,3 +159,19 @@ const searchButton = document.querySelector('#searchButton')
 searchButton.addEventListener('click', ()=>{
     getData(searchInput.value)
 })
+
+const celsiusButton = document.querySelector('#celsiusBtn')
+const ferenheitButton = document.querySelector('#ferenheitBtn')
+
+celsiusButton.addEventListener('click', ()=>{
+    currentTempType = 'c'
+    celsiusButton.classList.add('active')
+    ferenheitButton.classList.remove('active')
+    getData()
+})
+ferenheitButton.addEventListener('click', ()=>{
+    currentTempType = 'f'
+    ferenheitButton.classList.add('active')
+    celsiusButton.classList.remove('active')
+    getData()
+})
