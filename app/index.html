@@ -15,14 +15,20 @@
 </head>
 
 <body>
-    <div class="main dark">
+    <div id="main" class="main">
         <div class="header">
-            <div class="theme-toggle">
-                <div class="toggle-wrapper">
-                    <div class="toggle-inner"></div>
-                </div>
-                <p id="themeText">Light mode</p>
-            </div>
+        <div class="theme-toggle">
+        
+        <div id="themeToggle" class="toggle-wrapper">
+        <div class="toggle-inner"></div>
+        </div>
+        
+        <p id="themeText">
+        <span class="light">Light</span>
+        <span class="dark">Dark</span>
+        mode
+        </p>
+        </div>
 
             <div class="search-bar">
                 <input type="text" id="searchInput">
@@ -47,12 +53,12 @@
                     <h2 id="mainTemp"></h2>
                     <p class="feels-like">Feels like <span id="feelsLike"></span></p>
                     <div class="time-info">
-                        <div class="sun-icon">
-                            <img src="./images/Sunrise.png" alt="">
+                        <div class="sun-icon icon">
+                            <img src="./images/sunrise-white 1.png" alt="">
                         </div>
                         <div>
                             <p class="title">Sunrise</p>
-                            <p class="sunriseTime">06:37 AM</p>
+                            <p id="sunriseTime">06:37 AM</p>
                         </div>
                     </div>
                     <div class="time-info">
@@ -61,7 +67,7 @@
                         </div>
                         <div>
                             <p class="title">Sunset</p>
-                            <p class="sunsetTime">06:37 AM</p>
+                            <p id="sunsetTime">06:37 AM</p>
                         </div>
                     </div>
                 </div>
@@ -71,28 +77,28 @@
                 </div>
 
                 <div class="general-info">
-                    <div>
+                    <div id="humidity">
                         <div class="icon">
                             <img src="./images/humidity 1.png" alt="">
                         </div>
                         <div class="amount">41%</div>
                         <div class="text">Humidity</div>
                     </div>
-                    <div>
+                    <div id="wind">
                         <div class="icon">
                             <img src="./images/wind 1.png" alt="">
                         </div>
                         <div class="amount">2km/h</div>
                         <div class="text">Wind</div>
                     </div>
-                    <div>
+                    <div id="pressure">
                         <div class="icon">
                             <img src="./images/pressure-white 1.png" alt="">
                         </div>
                         <div class="amount">997hPa</div>
                         <div class="text">Pressure</div>
                     </div>
-                    <div>
+                    <div id="uv">
                         <div class="icon">
                             <img src="./images/uv-white 1.png" alt="">
                         </div>
@@ -106,75 +112,16 @@
         <div class="container">
             <div class="forecast-block block">
                 <h3>5 days forecast</h3>
-              
-                <div class="row">
-                    <img src="./images/clouds 1.png" alt="">
-                    <p class="amount">20°C</p>
-                    <p class="text">Friday, 1 Sep</p>
-                </div>
+              <div class="wrapper">
 
-                <div id="pressurer">
-                    <img src="./images/mist 1.png" alt="">
-                    <p class="amount">22°C</p>
-                    <p class="text">Saturday, 2 Sep</p>
-                </div>
-
-                <div id="humidity">
-                    <img src="./images/sun.png" alt="">
-                    <p class="amount">27°C</p>
-                    <p class="text">Sunday, 3 Sep</p>
-                </div>
-
-                <div id="wind">
-                    <img src="./images/drizzle 1.png" alt="">
-                    <p class="amount">18°C</p>
-                    <p class="text">Monday, 4 Sep</p>
-                </div>
-
-                <div id="uv">
-                    <img src="./images/rain 2.png" alt="">
-                    <p class="amount">16°C</p>
-                    <p class="text">Tuesday, 5 Sep</p>
-                </div>
+              </div>
+               
+           
             </div>
             <div class="hourly-block block">
                 <h3>Hourly Forecast</h3>
                 <div class="hourly-info-wrapper">
-                    <div class="hourly-info">
-                        <p class="hour">12:00</p>
-                        <img class="hourly-icon" src="./images/sun.png" alt="">
-                        <p class="hourly-temp" >26°C</p>
-                        <img class="arrow" src="./images/navigation 1.png" alt="">
-                        <p class="hourly-amount">3km/h</p>
-                    </div>
-                    <div class="hourly-info">
-                        <p class="hour">15:00</p>
-                        <img class="hourly-icon" src="./images/sun.png" alt="">
-                        <p class="hourly-temp" >27°C</p>
-                        <img class="arrow" src="./images/navigation 2.png" alt="">
-                        <p class="hourly-amount">2km/h</p>
-                    </div>
-                    <div class="hourly-info">
-                        <p class="hour">18:00</p>
-                        <img class="hourly-icon" src="./images/clouds 1.png" alt="">
-                        <p class="hourly-temp" >27°C</p>
-                        <img class="arrow" src="./images/navigation 1.png" alt="">
-                        <p class="hourly-amount">2km/h</p>
-                    </div>
-                    <div class="hourly-info night">
-                        <p class="hour">21:00</p>
-                        <img class="hourly-icon" src="./images/clouds 1.png" alt="">
-                        <p class="hourly-temp" >25°C</p>
-                        <img class="arrow" src="./images/navigation 3.png" alt="">
-                        <p class="hourly-amount">3km/h</p>
-                    </div>
-                    <div class="hourly-info night">
-                        <p class="hour">00:00</p>
-                        <img class="hourly-icon" src="./images/sun.png" alt="">
-                        <p class="hourly-temp" >22°C</p>
-                        <img class="arrow" src="./images/navigation 1.png" alt="">
-                        <p class="hourly-amount">3km/h</p>
-                    </div>
+                 
                 </div>
                 
                 
